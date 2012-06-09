@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
@@ -22,7 +22,7 @@
                     </connections>
                 </tabBarController>
             </objects>
-            <point key="canvasLocation" x="132" y="180"/>
+            <point key="canvasLocation" x="-692" y="40"/>
         </scene>
         <!--Lists Table View Controller - 列表-->
         <scene sceneID="H5x-Rn-nQO">
@@ -57,7 +57,7 @@
                     </navigationItem>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1368" y="-239"/>
+            <point key="canvasLocation" x="544" y="-379"/>
         </scene>
         <!--New List Table View Controller - 新列表-->
         <scene sceneID="Kml-pp-0Ng">
@@ -94,7 +94,7 @@
                     </navigationItem>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="2498" y="-641"/>
+            <point key="canvasLocation" x="1674" y="-781"/>
         </scene>
         <!--Pick Category Table View Controller-->
         <scene sceneID="N3I-xi-gLt">
@@ -123,7 +123,7 @@
                     </tableView>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="3038" y="-641"/>
+            <point key="canvasLocation" x="2214" y="-781"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xnd-Ne-kcK">
@@ -138,7 +138,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="1966" y="-641"/>
+            <point key="canvasLocation" x="1142" y="-781"/>
         </scene>
         <!--List Detail Table View Controller-->
         <scene sceneID="LsJ-0Y-rNZ">
@@ -174,7 +174,7 @@
                     </navigationItem>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1966" y="73"/>
+            <point key="canvasLocation" x="1142" y="-67"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xxP-cg-HLz">
@@ -189,7 +189,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="2498" y="73"/>
+            <point key="canvasLocation" x="1674" y="-67"/>
         </scene>
         <!--New Item View Controller - 新条目-->
         <scene sceneID="H6L-jo-6yF">
@@ -215,7 +215,7 @@
                     </navigationItem>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="3038" y="73"/>
+            <point key="canvasLocation" x="2214" y="-67"/>
         </scene>
         <!--Navigation Controller - 列表-->
         <scene sceneID="m9e-kh-6VQ">
@@ -231,7 +231,7 @@
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="834" y="-239"/>
+            <point key="canvasLocation" x="10" y="-379"/>
         </scene>
     </scenes>
     <classes>
