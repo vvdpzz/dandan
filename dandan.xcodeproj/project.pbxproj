@@ -25,6 +25,9 @@
 		9F29B8671582FFC500BFDE01 /* retweet-outline-button-item@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F29B8581582FFC500BFDE01 /* retweet-outline-button-item@2x.png */; };
 		9F29B8681582FFC500BFDE01 /* star-hollow.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F29B8591582FFC500BFDE01 /* star-hollow.png */; };
 		9F29B8691582FFC500BFDE01 /* star-hollow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F29B85A1582FFC500BFDE01 /* star-hollow@2x.png */; };
+		9F29B8791583250A00BFDE01 /* UIColor+UIColor_Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F29B8781583250A00BFDE01 /* UIColor+UIColor_Hex.m */; };
+		9F29B87B15832D7800BFDE01 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F29B87A15832D7800BFDE01 /* AssetsLibrary.framework */; };
+		9F29B87E158334A500BFDE01 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F29B87D158334A500BFDE01 /* PreviewViewController.m */; };
 		9FB4F13815707BA2002EE549 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB4F13715707BA2002EE549 /* UIKit.framework */; };
 		9FB4F13A15707BA2002EE549 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB4F13915707BA2002EE549 /* Foundation.framework */; };
 		9FB4F13C15707BA2002EE549 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB4F13B15707BA2002EE549 /* CoreGraphics.framework */; };
@@ -61,6 +64,11 @@
 		9F29B8581582FFC500BFDE01 /* retweet-outline-button-item@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "retweet-outline-button-item@2x.png"; sourceTree = "<group>"; };
 		9F29B8591582FFC500BFDE01 /* star-hollow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-hollow.png"; sourceTree = "<group>"; };
 		9F29B85A1582FFC500BFDE01 /* star-hollow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-hollow@2x.png"; sourceTree = "<group>"; };
+		9F29B8771583250A00BFDE01 /* UIColor+UIColor_Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColor_Hex.h"; sourceTree = "<group>"; };
+		9F29B8781583250A00BFDE01 /* UIColor+UIColor_Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColor_Hex.m"; sourceTree = "<group>"; };
+		9F29B87A15832D7800BFDE01 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		9F29B87C158334A500BFDE01 /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		9F29B87D158334A500BFDE01 /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
 		9FB4F13315707BA2002EE549 /* dandan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dandan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB4F13715707BA2002EE549 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9FB4F13915707BA2002EE549 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F29B87B15832D7800BFDE01 /* AssetsLibrary.framework in Frameworks */,
 				9FB4F13815707BA2002EE549 /* UIKit.framework in Frameworks */,
 				9FB4F13A15707BA2002EE549 /* Foundation.framework in Frameworks */,
 				9FB4F13C15707BA2002EE549 /* CoreGraphics.framework in Frameworks */,
@@ -119,6 +128,7 @@
 		9FB4F13615707BA2002EE549 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9F29B87A15832D7800BFDE01 /* AssetsLibrary.framework */,
 				9FB4F13715707BA2002EE549 /* UIKit.framework */,
 				9FB4F13915707BA2002EE549 /* Foundation.framework */,
 				9FB4F13B15707BA2002EE549 /* CoreGraphics.framework */,
@@ -130,6 +140,8 @@
 		9FB4F13D15707BA2002EE549 /* dandan */ = {
 			isa = PBXGroup;
 			children = (
+				9F29B8771583250A00BFDE01 /* UIColor+UIColor_Hex.h */,
+				9F29B8781583250A00BFDE01 /* UIColor+UIColor_Hex.m */,
 				9F29B8481582FCD000BFDE01 /* SideSwipeTableViewCell.h */,
 				9F29B8491582FCD000BFDE01 /* SideSwipeTableViewCell.m */,
 				9FB4F14615707BA2002EE549 /* AppDelegate.h */,
@@ -146,6 +158,8 @@
 				9FB4F17915708A5D002EE549 /* PickCategoryTableViewController.m */,
 				9F1F74D11570C8F5009B289B /* NewItemViewController.h */,
 				9F1F74D21570C8F5009B289B /* NewItemViewController.m */,
+				9F29B87C158334A500BFDE01 /* PreviewViewController.h */,
+				9F29B87D158334A500BFDE01 /* PreviewViewController.m */,
 			);
 			path = dandan;
 			sourceTree = "<group>";
@@ -289,6 +303,8 @@
 				9FB4F17A15708A5D002EE549 /* PickCategoryTableViewController.m in Sources */,
 				9F1F74D31570C8F5009B289B /* NewItemViewController.m in Sources */,
 				9F29B84A1582FCD000BFDE01 /* SideSwipeTableViewCell.m in Sources */,
+				9F29B8791583250A00BFDE01 /* UIColor+UIColor_Hex.m in Sources */,
+				9F29B87E158334A500BFDE01 /* PreviewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
