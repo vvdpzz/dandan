@@ -15,4 +15,11 @@
     NSString *databasePath;
 }
 @property (strong, nonatomic) NSMutableArray *listArray;
+
+- (NSString *) getDBPath;
+- (NSInteger)CreateNewList:(sqlite3 *)db listTitle:(NSString *)listTitle categoryID:(NSInteger *)categoryID isShare:(BOOL)isShare;
+- (NSArray *)getCategoryList;
+- (NSArray *)getList;
+- (NSInteger)insertNewTodoIntoDatabase;
+
 @end
