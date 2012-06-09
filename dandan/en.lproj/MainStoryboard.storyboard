@@ -235,6 +235,30 @@
             </objects>
             <point key="canvasLocation" x="2214" y="-67"/>
         </scene>
+        <!--Preview View Controller-->
+        <scene sceneID="mCC-EU-utv">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MWJ-fj-yH3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="previewViewController" id="oTt-Qo-2Yq" customClass="PreviewViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Af7-nd-N4E">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="sBT-Zp-XPw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="imageView" destination="sBT-Zp-XPw" id="AVS-er-SoB"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3517" y="73"/>
+        </scene>
         <!--Navigation Controller - 列表-->
         <scene sceneID="m9e-kh-6VQ">
             <objects>
@@ -280,6 +304,9 @@
         </class>
         <class className="PickCategoryTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PickCategoryTableViewController.h"/>
+        </class>
+        <class className="PreviewViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PreviewViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
