@@ -14,5 +14,5 @@
     sqlite3 *database;
     NSString *databasePath;
 }
-
+@property (strong, nonatomic) NSMutableArray *listArray;
 @end

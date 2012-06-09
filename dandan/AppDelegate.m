@@ -17,6 +17,7 @@
 {
     SQLLiteController *sqliteController = [[SQLLiteController alloc]init];
     [sqliteController performSelector:@selector(createEditableCopyofDatabaseIfNeeded)];
+    [sqliteController performSelector:@selector(initializeDatabase)];
     return YES;
 }
 							
