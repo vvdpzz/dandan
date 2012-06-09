@@ -1,0 +1,9 @@
+*.d
+tags
+a.out
+*.sqlite
+.DS_Store
+iActiveRecord.xcodeproj/project.xcworkspace/xcuserdata/*
+iActiveRecord.xcodeproj/xcuserdata/*
+DerivedData/*
+build

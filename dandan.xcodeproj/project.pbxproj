@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AAC2C3BD6AD402696EBDEAE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 317E86C0A7A84F39B34AB853 /* libPods.a */; };
+		9F1F74D31570C8F5009B289B /* NewItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1F74D21570C8F5009B289B /* NewItemViewController.m */; };
 		9FB4F13815707BA2002EE549 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB4F13715707BA2002EE549 /* UIKit.framework */; };
 		9FB4F13A15707BA2002EE549 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB4F13915707BA2002EE549 /* Foundation.framework */; };
 		9FB4F13C15707BA2002EE549 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB4F13B15707BA2002EE549 /* CoreGraphics.framework */; };
@@ -14,34 +16,38 @@
 		9FB4F14415707BA2002EE549 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB4F14315707BA2002EE549 /* main.m */; };
 		9FB4F14815707BA2002EE549 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB4F14715707BA2002EE549 /* AppDelegate.m */; };
 		9FB4F14B15707BA2002EE549 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FB4F14915707BA2002EE549 /* MainStoryboard.storyboard */; };
-		9FB4F14E15707BA2002EE549 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB4F14D15707BA2002EE549 /* FirstViewController.m */; };
-		9FB4F15015707BA2002EE549 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB4F14F15707BA2002EE549 /* first.png */; };
-		9FB4F15215707BA2002EE549 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB4F15115707BA2002EE549 /* first@2x.png */; };
-		9FB4F15515707BA2002EE549 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB4F15415707BA2002EE549 /* SecondViewController.m */; };
-		9FB4F15715707BA2002EE549 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB4F15615707BA2002EE549 /* second.png */; };
-		9FB4F15915707BA2002EE549 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB4F15815707BA2002EE549 /* second@2x.png */; };
+		9FB4F16915707E9C002EE549 /* ListsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB4F16815707E9C002EE549 /* ListsTableViewController.m */; };
+		9FB4F170157085E1002EE549 /* ListDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB4F16F157085E1002EE549 /* ListDetailTableViewController.m */; };
+		9FB4F173157086CE002EE549 /* NewListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB4F172157086CE002EE549 /* NewListTableViewController.m */; };
+		9FB4F17A15708A5D002EE549 /* PickCategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB4F17915708A5D002EE549 /* PickCategoryTableViewController.m */; };
+		9FB4F17D15708D94002EE549 /* dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FB4F17C15708D94002EE549 /* dot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		317E86C0A7A84F39B34AB853 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		48F537BB258244ECB81BA6EA /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		9F1F74D11570C8F5009B289B /* NewItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewItemViewController.h; sourceTree = "<group>"; };
+		9F1F74D21570C8F5009B289B /* NewItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewItemViewController.m; sourceTree = "<group>"; };
 		9FB4F13315707BA2002EE549 /* dandan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dandan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FB4F13715707BA2002EE549 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9FB4F13915707BA2002EE549 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9FB4F13B15707BA2002EE549 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9FB4F13F15707BA2002EE549 /* dandan-Info.plist */ = {isa = PBXFileReference; path = "dandan-Info.plist"; sourceTree = "<group>"; };
+		9FB4F13F15707BA2002EE549 /* dandan-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dandan-Info.plist"; sourceTree = "<group>"; };
 		9FB4F14115707BA2002EE549 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9FB4F14315707BA2002EE549 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9FB4F14515707BA2002EE549 /* dandan-Prefix.pch */ = {isa = PBXFileReference; path = "dandan-Prefix.pch"; sourceTree = "<group>"; };
-		9FB4F14615707BA2002EE549 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		9FB4F14515707BA2002EE549 /* dandan-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dandan-Prefix.pch"; sourceTree = "<group>"; };
+		9FB4F14615707BA2002EE549 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9FB4F14715707BA2002EE549 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9FB4F14A15707BA2002EE549 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		9FB4F14C15707BA2002EE549 /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
-		9FB4F14D15707BA2002EE549 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		9FB4F14F15707BA2002EE549 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		9FB4F15115707BA2002EE549 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		9FB4F15315707BA2002EE549 /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
-		9FB4F15415707BA2002EE549 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		9FB4F15615707BA2002EE549 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		9FB4F15815707BA2002EE549 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		9FB4F16715707E9C002EE549 /* ListsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListsTableViewController.h; sourceTree = "<group>"; };
+		9FB4F16815707E9C002EE549 /* ListsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListsTableViewController.m; sourceTree = "<group>"; };
+		9FB4F16E157085E1002EE549 /* ListDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListDetailTableViewController.h; sourceTree = "<group>"; };
+		9FB4F16F157085E1002EE549 /* ListDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListDetailTableViewController.m; sourceTree = "<group>"; };
+		9FB4F171157086CE002EE549 /* NewListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewListTableViewController.h; sourceTree = "<group>"; };
+		9FB4F172157086CE002EE549 /* NewListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewListTableViewController.m; sourceTree = "<group>"; };
+		9FB4F17815708A5D002EE549 /* PickCategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickCategoryTableViewController.h; sourceTree = "<group>"; };
+		9FB4F17915708A5D002EE549 /* PickCategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickCategoryTableViewController.m; sourceTree = "<group>"; };
+		9FB4F17C15708D94002EE549 /* dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 				9FB4F13815707BA2002EE549 /* UIKit.framework in Frameworks */,
 				9FB4F13A15707BA2002EE549 /* Foundation.framework in Frameworks */,
 				9FB4F13C15707BA2002EE549 /* CoreGraphics.framework in Frameworks */,
+				7AAC2C3BD6AD402696EBDEAE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +71,7 @@
 				9FB4F13D15707BA2002EE549 /* dandan */,
 				9FB4F13615707BA2002EE549 /* Frameworks */,
 				9FB4F13415707BA2002EE549 /* Products */,
+				48F537BB258244ECB81BA6EA /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +89,7 @@
 				9FB4F13715707BA2002EE549 /* UIKit.framework */,
 				9FB4F13915707BA2002EE549 /* Foundation.framework */,
 				9FB4F13B15707BA2002EE549 /* CoreGraphics.framework */,
+				317E86C0A7A84F39B34AB853 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -91,15 +100,17 @@
 				9FB4F14615707BA2002EE549 /* AppDelegate.h */,
 				9FB4F14715707BA2002EE549 /* AppDelegate.m */,
 				9FB4F14915707BA2002EE549 /* MainStoryboard.storyboard */,
-				9FB4F14C15707BA2002EE549 /* FirstViewController.h */,
-				9FB4F14D15707BA2002EE549 /* FirstViewController.m */,
-				9FB4F14F15707BA2002EE549 /* first.png */,
-				9FB4F15115707BA2002EE549 /* first@2x.png */,
-				9FB4F15315707BA2002EE549 /* SecondViewController.h */,
-				9FB4F15415707BA2002EE549 /* SecondViewController.m */,
-				9FB4F15615707BA2002EE549 /* second.png */,
-				9FB4F15815707BA2002EE549 /* second@2x.png */,
 				9FB4F13E15707BA2002EE549 /* Supporting Files */,
+				9FB4F16715707E9C002EE549 /* ListsTableViewController.h */,
+				9FB4F16815707E9C002EE549 /* ListsTableViewController.m */,
+				9FB4F16E157085E1002EE549 /* ListDetailTableViewController.h */,
+				9FB4F16F157085E1002EE549 /* ListDetailTableViewController.m */,
+				9FB4F171157086CE002EE549 /* NewListTableViewController.h */,
+				9FB4F172157086CE002EE549 /* NewListTableViewController.m */,
+				9FB4F17815708A5D002EE549 /* PickCategoryTableViewController.h */,
+				9FB4F17915708A5D002EE549 /* PickCategoryTableViewController.m */,
+				9F1F74D11570C8F5009B289B /* NewItemViewController.h */,
+				9F1F74D21570C8F5009B289B /* NewItemViewController.m */,
 			);
 			path = dandan;
 			sourceTree = "<group>";
@@ -107,12 +118,21 @@
 		9FB4F13E15707BA2002EE549 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9FB4F17B15708D72002EE549 /* Images */,
 				9FB4F13F15707BA2002EE549 /* dandan-Info.plist */,
 				9FB4F14015707BA2002EE549 /* InfoPlist.strings */,
 				9FB4F14315707BA2002EE549 /* main.m */,
 				9FB4F14515707BA2002EE549 /* dandan-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9FB4F17B15708D72002EE549 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9FB4F17C15708D94002EE549 /* dot.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +145,7 @@
 				9FB4F12F15707BA2002EE549 /* Sources */,
 				9FB4F13015707BA2002EE549 /* Frameworks */,
 				9FB4F13115707BA2002EE549 /* Resources */,
+				541F9BDBCC154423AC57C11E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,14 +188,28 @@
 			files = (
 				9FB4F14215707BA2002EE549 /* InfoPlist.strings in Resources */,
 				9FB4F14B15707BA2002EE549 /* MainStoryboard.storyboard in Resources */,
-				9FB4F15015707BA2002EE549 /* first.png in Resources */,
-				9FB4F15215707BA2002EE549 /* first@2x.png in Resources */,
-				9FB4F15715707BA2002EE549 /* second.png in Resources */,
-				9FB4F15915707BA2002EE549 /* second@2x.png in Resources */,
+				9FB4F17D15708D94002EE549 /* dot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		541F9BDBCC154423AC57C11E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9FB4F12F15707BA2002EE549 /* Sources */ = {
@@ -183,8 +218,11 @@
 			files = (
 				9FB4F14415707BA2002EE549 /* main.m in Sources */,
 				9FB4F14815707BA2002EE549 /* AppDelegate.m in Sources */,
-				9FB4F14E15707BA2002EE549 /* FirstViewController.m in Sources */,
-				9FB4F15515707BA2002EE549 /* SecondViewController.m in Sources */,
+				9FB4F16915707E9C002EE549 /* ListsTableViewController.m in Sources */,
+				9FB4F170157085E1002EE549 /* ListDetailTableViewController.m in Sources */,
+				9FB4F173157086CE002EE549 /* NewListTableViewController.m in Sources */,
+				9FB4F17A15708A5D002EE549 /* PickCategoryTableViewController.m in Sources */,
+				9F1F74D31570C8F5009B289B /* NewItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,22 +295,30 @@
 		};
 		9FB4F15D15707BA2002EE549 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48F537BB258244ECB81BA6EA /* Pods.xcconfig */;
 			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "dandan/dandan-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "dandan/dandan-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		9FB4F15E15707BA2002EE549 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48F537BB258244ECB81BA6EA /* Pods.xcconfig */;
 			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "dandan/dandan-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "dandan/dandan-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -296,6 +342,7 @@
 				9FB4F15E15707BA2002EE549 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

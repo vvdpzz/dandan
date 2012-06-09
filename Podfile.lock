@@ -1,0 +1,17 @@
+PODS:
+  - ASIHTTPRequest (1.8.1):
+    - Reachability
+  - JSONKit (1.5pre)
+  - MTStatusBarOverlay (0.9)
+  - Reachability (3.0.0)
+  - SDWebImage (2.6)
+  - SSPullToRefresh (1.0.1)
+  - SVProgressHUD (0.7)
+
+DEPENDENCIES:
+  - ASIHTTPRequest
+  - JSONKit
+  - MTStatusBarOverlay
+  - SDWebImage
+  - SSPullToRefresh
+  - SVProgressHUD
