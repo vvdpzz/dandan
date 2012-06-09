@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D2393EB158304E7007F9922 /* SQLLiteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2393EA158304E7007F9922 /* SQLLiteController.m */; };
+		4D2393F01583066D007F9922 /* dan.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 4D2393EF1583066D007F9922 /* dan.sqlite */; };
+		4D239400158319D1007F9922 /* DataSyncController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2393FF158319D1007F9922 /* DataSyncController.m */; };
+		4D23940315831F50007F9922 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D23940215831F50007F9922 /* libsqlite3.0.dylib */; };
 		7AAC2C3BD6AD402696EBDEAE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 317E86C0A7A84F39B34AB853 /* libPods.a */; };
 		9F1F74D31570C8F5009B289B /* NewItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1F74D21570C8F5009B289B /* NewItemViewController.m */; };
 		9F29B84A1582FCD000BFDE01 /* SideSwipeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F29B8491582FCD000BFDE01 /* SideSwipeTableViewCell.m */; };
@@ -45,6 +49,13 @@
 /* Begin PBXFileReference section */
 		317E86C0A7A84F39B34AB853 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		48F537BB258244ECB81BA6EA /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		4D2393E9158304E7007F9922 /* SQLLiteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLLiteController.h; sourceTree = "<group>"; };
+		4D2393EA158304E7007F9922 /* SQLLiteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLLiteController.m; sourceTree = "<group>"; };
+		4D2393EF1583066D007F9922 /* dan.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = dan.sqlite; sourceTree = "<group>"; };
+		4D2393FE158319D1007F9922 /* DataSyncController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSyncController.h; sourceTree = "<group>"; };
+		4D2393FF158319D1007F9922 /* DataSyncController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSyncController.m; sourceTree = "<group>"; };
+		4D23940115831B93007F9922 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		4D23940215831F50007F9922 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		9F1F74D11570C8F5009B289B /* NewItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewItemViewController.h; sourceTree = "<group>"; };
 		9F1F74D21570C8F5009B289B /* NewItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewItemViewController.m; sourceTree = "<group>"; };
 		9F29B8481582FCD000BFDE01 /* SideSwipeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideSwipeTableViewCell.h; sourceTree = "<group>"; };
@@ -97,6 +108,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F29B87B15832D7800BFDE01 /* AssetsLibrary.framework in Frameworks */,
+				4D23940315831F50007F9922 /* libsqlite3.0.dylib in Frameworks */,
 				9FB4F13815707BA2002EE549 /* UIKit.framework in Frameworks */,
 				9FB4F13A15707BA2002EE549 /* Foundation.framework in Frameworks */,
 				9FB4F13C15707BA2002EE549 /* CoreGraphics.framework in Frameworks */,
@@ -129,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				9F29B87A15832D7800BFDE01 /* AssetsLibrary.framework */,
+				4D23940215831F50007F9922 /* libsqlite3.0.dylib */,
 				9FB4F13715707BA2002EE549 /* UIKit.framework */,
 				9FB4F13915707BA2002EE549 /* Foundation.framework */,
 				9FB4F13B15707BA2002EE549 /* CoreGraphics.framework */,
@@ -142,6 +155,7 @@
 			children = (
 				9F29B8771583250A00BFDE01 /* UIColor+UIColor_Hex.h */,
 				9F29B8781583250A00BFDE01 /* UIColor+UIColor_Hex.m */,
+				4D2393EF1583066D007F9922 /* dan.sqlite */,
 				9F29B8481582FCD000BFDE01 /* SideSwipeTableViewCell.h */,
 				9F29B8491582FCD000BFDE01 /* SideSwipeTableViewCell.m */,
 				9FB4F14615707BA2002EE549 /* AppDelegate.h */,
@@ -160,6 +174,11 @@
 				9F1F74D21570C8F5009B289B /* NewItemViewController.m */,
 				9F29B87C158334A500BFDE01 /* PreviewViewController.h */,
 				9F29B87D158334A500BFDE01 /* PreviewViewController.m */,
+				4D2393E9158304E7007F9922 /* SQLLiteController.h */,
+				4D2393EA158304E7007F9922 /* SQLLiteController.m */,
+				4D2393FE158319D1007F9922 /* DataSyncController.h */,
+				4D2393FF158319D1007F9922 /* DataSyncController.m */,
+				4D23940115831B93007F9922 /* Constants.h */,
 			);
 			path = dandan;
 			sourceTree = "<group>";
@@ -268,6 +287,7 @@
 				9F29B8671582FFC500BFDE01 /* retweet-outline-button-item@2x.png in Resources */,
 				9F29B8681582FFC500BFDE01 /* star-hollow.png in Resources */,
 				9F29B8691582FFC500BFDE01 /* star-hollow@2x.png in Resources */,
+				4D2393F01583066D007F9922 /* dan.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +325,8 @@
 				9F29B84A1582FCD000BFDE01 /* SideSwipeTableViewCell.m in Sources */,
 				9F29B8791583250A00BFDE01 /* UIColor+UIColor_Hex.m in Sources */,
 				9F29B87E158334A500BFDE01 /* PreviewViewController.m in Sources */,
+				4D2393EB158304E7007F9922 /* SQLLiteController.m in Sources */,
+				4D239400158319D1007F9922 /* DataSyncController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

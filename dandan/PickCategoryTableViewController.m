@@ -8,6 +8,7 @@
 
 #import "PickCategoryTableViewController.h"
 #import "NewListTableViewController.h"
+#import "SQLLiteController.h"
 
 @interface PickCategoryTableViewController ()
 
@@ -16,10 +17,22 @@
 @implementation PickCategoryTableViewController
 @synthesize delegate, categories;
 
+- (NSArray *)fillCategoryList{
+    if ([[SQLLiteController alloc] respondsToSelector:@selector(getCategoryList)]) 
+    {
+        categories = [[SQLLiteController alloc]  performSelector:@selector(getCategoryList)];
+    } else {
+        NSLog(@"## Class does not respond to getCategoryList");
+    }
+    
+    return categories;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.categories = [[NSArray alloc] initWithObjects:@"科技", @"电影", @"艺术", @"音乐", nil];
+    //self.categories = [[NSArray alloc] initWithObjects:@"科技", @"电影", @"艺术", @"音乐", nil];
+    [self fillCategoryList];
 }
 
 - (void)viewDidUnload
