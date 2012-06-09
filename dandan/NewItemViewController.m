@@ -38,8 +38,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillHideNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillHideNotification object:nil];
     [self initToolbarItems];
 }
 
@@ -64,7 +64,7 @@
     [self dismissModalViewControllerAnimated:YES];
 }
 
-- (void)keyboardWillShow:(NSNotification *)notification{
+- (void)keyboardWillChangeFrame:(NSNotification *)notification{
     NSDictionary *info = [notification userInfo];
     CGRect kbFrame = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
     
@@ -79,17 +79,6 @@
     frame = self.contentTextView.frame;
     frame.size.height = self.toolbar.frame.origin.y;
     [self.contentTextView setFrame:frame];
-}
-
-- (void)keyboardWillHide:(NSNotification *)notification{
-    NSDictionary *info = [notification userInfo];
-    CGRect kbFrame = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
-
-    CGRect frame;
-    
-    frame = self.toolbar.frame;
-    frame.origin.y =  kbFrame.origin.y - self.toolbar.frame.size.height - 64;
-    [self.toolbar setFrame:frame];
 }
 
 - (void)print:(NSString *)whose frame:(CGRect)frame{
