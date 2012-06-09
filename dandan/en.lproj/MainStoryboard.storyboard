@@ -199,6 +199,20 @@
                     <view key="view" contentMode="scaleToFill" id="EaA-TJ-5GI">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="9DK-eV-iJG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="hoL-4N-eRb">
+                                <rect key="frame" x="0.0" y="372" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items/>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="新条目" id="biW-Jw-g0i">
@@ -213,6 +227,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contentTextView" destination="9DK-eV-iJG" id="YdH-MV-ac7"/>
+                        <outlet property="toolbar" destination="hoL-4N-eRb" id="tqc-2b-K0U"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="3038" y="73"/>
@@ -240,12 +258,17 @@
         </class>
         <class className="ListsTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ListsTableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="sideSwipeView" candidateClass="UIView"/>
+            </relationships>
         </class>
         <class className="NewItemViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NewItemViewController.h"/>
             <relationships>
                 <relationship kind="action" name="CancelModal:"/>
                 <relationship kind="action" name="SaveItem:"/>
+                <relationship kind="outlet" name="contentTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
             </relationships>
         </class>
         <class className="NewListTableViewController" superclassName="UITableViewController">
