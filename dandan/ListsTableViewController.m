@@ -12,6 +12,7 @@
 #import "SideSwipeTableViewCell.h"
 #import <QuartzCore/QuartzCore.h>
 
+#define BUTTONS_LEFT_PADDING 80.0
 #define BUTTON_LEFT_MARGIN 10.0
 #define BUTTON_SPACING 25.0
 
@@ -59,9 +60,6 @@
     // Setup the title and image for each button within the side swipe view
     buttonData = [NSArray arrayWithObjects:
                   [NSDictionary dictionaryWithObjectsAndKeys:@"Reply", @"title", @"reply.png", @"image", nil],
-                  [NSDictionary dictionaryWithObjectsAndKeys:@"Retweet", @"title", @"retweet-outline-button-item.png", @"image", nil],
-                  [NSDictionary dictionaryWithObjectsAndKeys:@"Favorite", @"title", @"star-hollow.png", @"image", nil],
-                  [NSDictionary dictionaryWithObjectsAndKeys:@"Profile", @"title", @"person.png", @"image", nil],
                   [NSDictionary dictionaryWithObjectsAndKeys:@"Links", @"title", @"paperclip.png", @"image", nil],
                   [NSDictionary dictionaryWithObjectsAndKeys:@"Action", @"title", @"action.png", @"image", nil],
                   nil];
@@ -392,7 +390,7 @@
         UIImage* buttonImage = [UIImage imageNamed:[buttonInfo objectForKey:@"image"]];
         
         // Set the button's frame
-        button.frame = CGRectMake(leftEdge, sideSwipeView.center.y - buttonImage.size.height/2.0, buttonImage.size.width, buttonImage.size.height);
+        button.frame = CGRectMake(leftEdge + BUTTONS_LEFT_PADDING, sideSwipeView.center.y - buttonImage.size.height/2.0, buttonImage.size.width, buttonImage.size.height);
         
         // Add the image as the button's background image
         // [button setBackgroundImage:buttonImage forState:UIControlStateNormal];
