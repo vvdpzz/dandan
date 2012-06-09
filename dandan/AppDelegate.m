@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SQLLiteController.h"
 
 @implementation AppDelegate
 
@@ -14,6 +15,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    SQLLiteController *sqliteController = [[SQLLiteController alloc]init];
+    [sqliteController performSelector:@selector(createEditableCopyofDatabaseIfNeeded)];
     return YES;
 }
 							

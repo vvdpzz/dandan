@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <sqlite3.h>
+#define SQLiteFilename    @"dan.sqlite"
 
-@interface SQLLiteController : NSObject
+@interface SQLLiteController : NSObject{
+    sqlite3 *database;
+    NSString *databasePath;
+}
 
 @end
