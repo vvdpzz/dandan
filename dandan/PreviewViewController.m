@@ -13,13 +13,12 @@
 @end
 
 @implementation PreviewViewController
-@synthesize imageView;
+@synthesize imageView, image;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -27,6 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.title = @"预览";
+    self.imageView.image = self.image;
 }
 
 - (void)viewDidUnload

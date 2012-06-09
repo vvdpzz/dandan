@@ -125,7 +125,7 @@ static UIImage *shrinkImage(UIImage *original, CGSize size);
 
 - (void)previewImage{
     PreviewViewController *previewVC = [self.storyboard instantiateViewControllerWithIdentifier:@"previewViewController"];
-    previewVC.imageView.image = self.image;
+    previewVC.image = self.image;
     [self.navigationController pushViewController:previewVC animated:YES];
 }
 

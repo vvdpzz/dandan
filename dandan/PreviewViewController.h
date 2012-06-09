@@ -10,5 +10,5 @@
 
 @interface PreviewViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
-
+@property (strong, nonatomic) UIImage *image;
 @end
