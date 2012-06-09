@@ -15,4 +15,5 @@
 @interface PickCategoryTableViewController : UITableViewController
 @property (strong, nonatomic) NSArray *categories;
 @property (nonatomic, weak) id <CategoryPickerDelegate> delegate;
+- (NSArray *)fillCategoryList;
 @end

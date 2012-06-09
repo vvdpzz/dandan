@@ -8,7 +8,7 @@
 
 #import "NewListTableViewController.h"
 #import "PickCategoryTableViewController.h"
-
+#import "SQLLiteController.h"
 @interface NewListTableViewController ()
 
 @end
@@ -128,7 +128,18 @@
 }
 
 - (IBAction)SaveList:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
+    SQLLiteController *sqliteOperate = [[SQLLiteController alloc] init];
+    PickCategoryTableViewController *pickCategoryTableViewController = [[PickCategoryTableViewController alloc]init];
+    NSInteger categoryID = [pickCategoryTableViewController.fillCategoryList indexOfObject:categoryName];
+    NSString *listTitle = self.listNameTextField.text;    
+    //NSNumber *categoryID = @"11";
+    BOOL share = self.isShare.on;
+    NSLog(share ? @"Yes" : @"No");
+    NSLog(@"categoryIndexID:%i",selectedCategoryIndex);
+    NSLog(@"categoryName:%@",categoryName);
+    NSInteger result = [sqliteOperate CreateNewList:database listTitle:listTitle categoryID:&categoryID isShare:share];
+    NSLog(@"result %i",result);
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)CancelModal:(id)sender {

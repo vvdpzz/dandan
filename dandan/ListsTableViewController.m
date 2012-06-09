@@ -11,6 +11,7 @@
 
 #import "SideSwipeTableViewCell.h"
 #import <QuartzCore/QuartzCore.h>
+#import "SQLLiteController.h"
 
 #define BUTTONS_LEFT_PADDING 80.0
 #define BUTTON_LEFT_MARGIN 10.0
@@ -38,10 +39,22 @@
     return self;
 }
 
+- (NSArray *)fillList{
+    if ([[SQLLiteController alloc]  respondsToSelector:@selector(getList)]) 
+    {
+        lists = [[SQLLiteController alloc]  performSelector:@selector(getList)];
+    } else {
+        NSLog(@"## Class does not respond to getCategoryList");
+    }
+    
+    return lists;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.lists = [NSArray arrayWithObjects:@"Ruby on Rails", @"iOS Develop", nil];
+    //self.lists = [NSArray arrayWithObjects:@"Ruby on Rails", @"iOS Develop", nil];
+    [self fillList];
     
     // Side Swipe Table View
     
