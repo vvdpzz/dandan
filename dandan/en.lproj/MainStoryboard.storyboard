@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
@@ -235,6 +234,21 @@
             </objects>
             <point key="canvasLocation" x="2214" y="-67"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="OuE-GP-q7Z">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kn1-d2-ZPW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="9Zx-dp-To3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KEA-7I-Bpb">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="15B-sF-FDt"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3290" y="-67"/>
+        </scene>
         <!--Preview View Controller-->
         <scene sceneID="mCC-EU-utv">
             <objects>
@@ -257,7 +271,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="3517" y="73"/>
+            <point key="canvasLocation" x="4043" y="73"/>
         </scene>
         <!--Navigation Controller - 列表-->
         <scene sceneID="m9e-kh-6VQ">
@@ -275,40 +289,25 @@
             </objects>
             <point key="canvasLocation" x="10" y="-379"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rCa-be-BBn">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h6Q-uh-TmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="sfD-1Y-r1D" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="uy9-Lh-Yxv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9Zx-dp-To3" kind="relationship" relationship="rootViewController" id="jsp-yO-UaI"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="2764" y="-67"/>
+        </scene>
     </scenes>
-    <classes>
-        <class className="ListDetailTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ListDetailTableViewController.h"/>
-        </class>
-        <class className="ListsTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ListsTableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="sideSwipeView" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="NewItemViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewItemViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="CancelModal:"/>
-                <relationship kind="action" name="SaveItem:"/>
-                <relationship kind="outlet" name="contentTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
-            </relationships>
-        </class>
-        <class className="NewListTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewListTableViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="CancelModal:"/>
-                <relationship kind="action" name="SaveList:"/>
-            </relationships>
-        </class>
-        <class className="PickCategoryTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PickCategoryTableViewController.h"/>
-        </class>
-        <class className="PreviewViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PreviewViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

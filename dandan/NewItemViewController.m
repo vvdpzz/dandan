@@ -7,6 +7,7 @@
 //
 
 #import "NewItemViewController.h"
+#import "NewGeoViewController.h"
 
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <QuartzCore/QuartzCore.h>
