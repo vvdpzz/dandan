@@ -16,8 +16,8 @@
 @end
 
 @implementation NewGeoViewController
-@synthesize mapView, mapPane, myLocationManager, coordinate, currentLocationButton, clearLocationButton, reverseGeocoder, forwardGeocoder, titles, subTitle, mapImage;
-@synthesize theNewGeoDelegate,point,coord,coordPressed,subTitlePressed;
+
+@synthesize mapView, mapImage, myLocationManager, coordinate, coord,coordPressed,mapPane, currentLocationButton, clearLocationButton, point,reverseGeocoder, forwardGeocoder, titles, subTitle,subTitlePressed, theNewGeoDelegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

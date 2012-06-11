@@ -308,6 +308,42 @@
             <point key="canvasLocation" x="2764" y="-67"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="ListDetailTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ListDetailTableViewController.h"/>
+        </class>
+        <class className="ListsTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ListsTableViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="sideSwipeView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="NewItemViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewItemViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="CancelModal:"/>
+                <relationship kind="action" name="SaveItem:"/>
+                <relationship kind="outlet" name="contentTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
+            </relationships>
+        </class>
+        <class className="NewListTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NewListTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="CancelModal:"/>
+                <relationship kind="action" name="SaveList:"/>
+            </relationships>
+        </class>
+        <class className="PickCategoryTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PickCategoryTableViewController.h"/>
+        </class>
+        <class className="PreviewViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PreviewViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
