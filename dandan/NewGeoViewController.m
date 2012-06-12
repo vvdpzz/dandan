@@ -84,7 +84,7 @@
         [self.theNewGeoDelegate controller:self geoImage:mapImage];
         [self.navigationController popViewControllerAnimated:YES];
     }
-    
+
 //    [self.theNewGeoDelegate controller:self geoInfo:subTitle];
 //    [self.theNewGeoDelegate controller:self geoImage:mapImage];
 //    [self.navigationController popViewControllerAnimated:YES];

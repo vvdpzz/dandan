@@ -26,6 +26,7 @@ static UIImage *shrinkImage(UIImage *original, CGSize size);
 @synthesize contentTextView;
 @synthesize toolbar, buttons;
 @synthesize lastChosenMediaType, image, imageSelected;
+@synthesize geoInfoView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -305,5 +306,23 @@ static UIImage *shrinkImage(UIImage *original, CGSize size){
          // Typically you should handle an error more gracefully than this.
          NSLog(@"No groups");
      }];
+}
+
+// Call Geo
+-(void)handleLocation 
+{
+    if (geoInfoView != nil) {
+        NSLog(@"the view is there!");
+        UIActionSheet *addGeoActionSheet = [[UIActionSheet alloc] initWithTitle:nil
+                                                                       delegate:self
+                                                              cancelButtonTitle:@"取消"
+                                                         destructiveButtonTitle:nil
+                                                              otherButtonTitles:@"重新选择位置信息", nil];
+        [addGeoActionSheet showInView:self.view];
+    } else {
+        NewGeoViewController *geoView =[self.storyboard instantiateViewControllerWithIdentifier:@"NewGeoViewController"];
+        geoView.theNewGeoDelegate = self;
+        [self.navigationController pushViewController:geoView animated:YES];
+    }    
 }
 @end

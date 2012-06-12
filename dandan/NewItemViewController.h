@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NewGeoViewController.h"
 
 @interface NewItemViewController : UIViewController
-<UIActionSheetDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+<UIActionSheetDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate,NewGeoDelegate>
 @property (strong, nonatomic) IBOutlet UITextView *contentTextView;
 @property (strong, nonatomic) IBOutlet UIToolbar *toolbar;
 @property (strong, nonatomic) NSArray *buttons;
@@ -20,4 +21,7 @@
 @property (strong, nonatomic) NSString *lastChosenMediaType;
 @property (strong, nonatomic) UIImage *image;
 @property BOOL imageSelected;
+
+// Geo
+@property(strong, nonatomic) UIView *geoInfoView;
 @end
