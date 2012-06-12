@@ -26,7 +26,7 @@ static UIImage *shrinkImage(UIImage *original, CGSize size);
 @synthesize contentTextView;
 @synthesize toolbar, buttons;
 @synthesize lastChosenMediaType, image, imageSelected;
-@synthesize geoInfoView;
+@synthesize geoInfoView,items;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -324,5 +324,67 @@ static UIImage *shrinkImage(UIImage *original, CGSize size){
         geoView.theNewGeoDelegate = self;
         [self.navigationController pushViewController:geoView animated:YES];
     }    
+}
+
+- (void)controller:(NewGeoViewController *)controller geoInfo:(NSString *)geoInfo
+{
+    geoInfoView = [[UIView alloc] initWithFrame:CGRectMake(self.toolbar.frame.origin.x+10,self.toolbar.frame.origin.y-20,260,20)];
+    
+    UILabel *geoInfoLabel = [[UILabel alloc]initWithFrame:geoInfoView.frame];
+    geoInfoLabel.backgroundColor = [UIColor  colorWithRed: 240/255.0 green: 248/255.0 blue:250/255.0 alpha: 1.0];
+    //    240,248,255
+    geoInfoLabel.text = [NSString stringWithFormat:@"位置:%@",geoInfo];
+    [self.view addSubview:geoInfoLabel];
+}
+
+- (void)controller:(NewGeoViewController *)controller geoImage:(UIImage *)geoImage
+{
+    UIImageView *imageToMove = [[UIImageView alloc] initWithImage:geoImage];
+    imageToMove.frame = CGRectMake(self.toolbar.frame.origin.x+200,self.toolbar.frame.origin.y+5, 30, 30);
+    [self.view addSubview:imageToMove];
+    
+    // Move the image
+    [self moveImage:imageToMove duration:1.0 curve:UIViewAnimationCurveLinear x:-50.0 y:0.0];  
+    
+    UIButton *composeButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [composeButton setFrame:CGRectMake(0.0f, 0.0f, 30.0f, 30.0f)];
+    [composeButton addTarget:self action:@selector(addGeoButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    CALayer *sublayer = [composeButton layer];
+    sublayer.backgroundColor = [UIColor blueColor].CGColor;
+    sublayer.shadowOffset = CGSizeMake(0, 0);
+    sublayer.shadowRadius = 3.0;
+    sublayer.shadowColor = [UIColor blackColor].CGColor;
+    sublayer.shadowOpacity = 0.8;
+    sublayer.frame = CGRectMake(self.view.frame.size.width/2-15, self.view.frame.size.height/2-15,30,30);
+    sublayer.cornerRadius = 15;
+    
+    CALayer *imageLayer = [CALayer layer];
+    imageLayer.frame = sublayer.bounds;
+    imageLayer.cornerRadius = 15.0;
+    imageLayer.contents = (id) geoImage.CGImage;
+    imageLayer.borderWidth = 1;
+    imageLayer.borderColor = [UIColor whiteColorWithAlpha:0.7].CGColor;
+    imageLayer.masksToBounds = YES;
+    [sublayer addSublayer:imageLayer];
+    
+    UIBarButtonItem *composePost = [[UIBarButtonItem alloc] initWithCustomView:composeButton];
+    [items replaceObjectAtIndex:2 withObject:composePost];
+    [self.toolbar setItems:items animated:NO];
+}
+
+- (void)moveImage:(UIImageView *)images duration:(NSTimeInterval)duration
+            curve:(int)curve x:(CGFloat)x y:(CGFloat)y
+{
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:duration];
+    [UIView setAnimationCurve:curve];
+    [UIView setAnimationBeginsFromCurrentState:YES];
+    
+    CGAffineTransform transform = CGAffineTransformMakeTranslation(x, y);
+    images.transform = transform;
+    
+    // Commit the changes
+    [UIView commitAnimations];
 }
 @end

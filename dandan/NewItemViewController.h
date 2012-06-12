@@ -24,4 +24,5 @@
 
 // Geo
 @property(strong, nonatomic) UIView *geoInfoView;
+@property (strong, nonatomic) NSMutableArray *items;
 @end
