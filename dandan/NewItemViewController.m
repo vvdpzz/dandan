@@ -43,8 +43,9 @@ static UIImage *shrinkImage(UIImage *original, CGSize size);
     UIBarButtonItem *voiceItem = [[UIBarButtonItem alloc] initWithTitle:@"Voice" style:UIBarButtonItemStylePlain target:self action:@selector(handleVoice)];
     UIBarButtonItem *geoItem   = [[UIBarButtonItem alloc] initWithTitle:@"Map"   style:UIBarButtonItemStylePlain target:self action:@selector(handleLocation)];
     UIBarButtonItem *keyboardItem   = [[UIBarButtonItem alloc] initWithTitle:@"Keyboard" style:UIBarButtonItemStylePlain target:self action:@selector(handleKeyboard)];
-    buttons = [NSArray arrayWithObjects: imageItem, geoItem, voiceItem, flexible, keyboardItem, nil];
-    [self.toolbar setItems:buttons animated:YES];
+    //buttons = [NSArray arrayWithObjects: imageItem, geoItem, voiceItem, flexible, keyboardItem, nil];
+    items = [NSMutableArray arrayWithObjects: imageItem, geoItem, voiceItem, flexible, keyboardItem, nil];
+    [self.toolbar setItems:items animated:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -179,7 +180,7 @@ static UIImage *shrinkImage(UIImage *original, CGSize size);
     self.imageSelected = NO;
     
     UIBarButtonItem *imageItem = [[UIBarButtonItem alloc] initWithTitle:@"Image" style:UIBarButtonItemStylePlain target:self action:@selector(handleImage)];
-    NSMutableArray *items = [self.buttons mutableCopy];
+    //NSMutableArray *items = [self.buttons mutableCopy];
     [items replaceObjectAtIndex:0 withObject:imageItem];
     [self.toolbar setItems:items animated:NO];
 }
@@ -251,7 +252,7 @@ static UIImage *shrinkImage(UIImage *original, CGSize size){
         
         UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
         
-        NSMutableArray *items = [self.buttons mutableCopy];
+        //NSMutableArray *items = [self.buttons mutableCopy];
         
         [items replaceObjectAtIndex:0 withObject:barButtonItem];
         [self.toolbar setItems:items animated:NO];
@@ -344,7 +345,7 @@ static UIImage *shrinkImage(UIImage *original, CGSize size){
     [self.view addSubview:imageToMove];
     
     // Move the image
-    [self moveImage:imageToMove duration:1.0 curve:UIViewAnimationCurveLinear x:-50.0 y:0.0];  
+    [self moveImage:imageToMove duration:1.0 curve:UIViewAnimationCurveLinear x:-50.0 y:0.0];
     
     UIButton *composeButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [composeButton setFrame:CGRectMake(0.0f, 0.0f, 30.0f, 30.0f)];
@@ -369,7 +370,7 @@ static UIImage *shrinkImage(UIImage *original, CGSize size){
     [sublayer addSublayer:imageLayer];
     
     UIBarButtonItem *composePost = [[UIBarButtonItem alloc] initWithCustomView:composeButton];
-    [items replaceObjectAtIndex:2 withObject:composePost];
+    [items replaceObjectAtIndex:1 withObject:composePost];
     [self.toolbar setItems:items animated:NO];
 }
 
